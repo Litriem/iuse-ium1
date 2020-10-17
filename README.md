@@ -17,8 +17,6 @@ Restart Utimaker Cura 4.7.0, add printer and look for and expand IUSE and select
 
 Feel free to update the files as you see fit.
 
-NOTE: The printer is listed as being able to support a speed of 75/mm but in the printer profile I defaulted the speed to 30/mm in order to successfully print the XYZ cube. Feel free to adjust the speed to fit what you are printing.
-
 Happy 3D Printing
 
 I will not have the time to provide guidance on what I have provided so hopefully this all works for you.
