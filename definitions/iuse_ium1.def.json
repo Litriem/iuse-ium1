@@ -29,7 +29,7 @@
         "machine_end_gcode": {
             "default_value": "; IUM1 End Code\nG1 X0 Y0 Z130 ; Get extruder out of way\nM107 ; Turn off fan\n; Disable all extruder\nG91 ; Relative positioning\nT0\nG1 E-1 ; Reduce filament pressure\nM104 T0 S0\nG90 ; Absolute positioning\nG92 E0 ; Reset extruder position\nM140 S0 ; Disable heated bed\nM84 ; Turn steppers off"
         },
-        "speed_print": { "value": 30.0 },
+        "speed_print": { "value": 60.0 },
         "retraction_enable": { "default_value": true },
         "retraction_amount": { "default_value": 7 },
         "retraction_speed": { "default_value": 25 },
