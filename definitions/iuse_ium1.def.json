@@ -24,10 +24,10 @@
         "machine_depth": { "default_value": 110 },
         "machine_height": { "default_value": 120 },
         "machine_start_gcode": {
-            "default_value": "; IUM1 Start Code\nG28 ; Auto Home extruder\nG1 Z15 F100 ; Linear Move Z15 axis F100mm/m speed\nM107 ; Turn off fan\nG90 ; Absolute positioning\nM82 ; Extruder in absolute mode\nM104 T0 S210 ; Warm up, hot end to 210c without waiting\nG92 E0 ; Reset extruder position\nM109 T0 S210 ; Wait for temperature of 210"
+            "default_value": "; IUM1 Start Code\nG28 ; Auto Home extruder\nG1 Z15 F100 ; Linear Move Z15 axis F100mm/m speed\nG90 ; Absolute positioning\nM82 ; Extruder in absolute mode\nM104 T0 S190 ; Warm up, hot end to 190c without waiting\nG92 E0 ; Reset extruder position\nM109 T0 S190 ; Wait for temperature of 190c"
         },
         "machine_end_gcode": {
-            "default_value": "; IUM1 End Code\nG1 X0 Y0 Z130 ; Get extruder out of way\nM107 ; Turn off fan\n; Disable all extruder\nG91 ; Relative positioning\nT0\nG1 E-1 ; Reduce filament pressure\nM104 T0 S0\nG90 ; Absolute positioning\nG92 E0 ; Reset extruder position\nM140 S0 ; Disable heated bed\nM84 ; Turn steppers off"
+            "default_value": "; IUM1 End Code\nG1 X0 Y0 Z75 ; Get extruder out of way\n; Disable all extruder\nG91 ; Relative positioning\nT0\nG1 E-1 ; Reduce filament pressure\nM104 T0 S0\nG90 ; Absolute positioning\nG92 E0 ; Reset extruder position\nM140 S0 ; Disable heated bed\nM84 ; Turn steppers off"
         },
         "speed_print": { "value": 60.0 },
         "retraction_enable": { "default_value": true },
